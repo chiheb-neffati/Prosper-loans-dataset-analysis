@@ -1,0 +1,18 @@
+# Prosper loans data exploration and analysis
+
+## Dataset
+
+Prosper loans data is a dataset provided from <a href='https://www.prosper.com/'>Prosper Marketplace Inc</a>, a company specializing in loans at low interest rates to the borrowers.<br>
+This network represents loans between members of the peer-to-peer lending network. The online marketplace allows borrowers to post listings requesting loans. Lenders bid on these listings, which become loans if the amount requested is fully funded by the lenders. The network is directed from lender to borrower. Each edge also contains the time at which the loan originated, the amount requested, the loan status, the credit grade or rating of the borrower, the lender rate and the borrower rate, etc...(<a href='http://konect.cc/networks/prosper-loans/'>source</a>)<br>
+The dataset is comprised of 81 variables and contains 113937 entries, you can learn more about what each columns signifies by clicking this <a href='https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0'>link</a>
+
+## Summary of Findings
+
+In the data exploration phase, I worked on numerous variables and features and how they have an effect on each other, and thanks to that I got to learn a lot about this data.<br>
+Some of the findings I got includes the most popular payment duration of listing which was surprising for me when i saw that medium length term are the most common, the demographic of the employment status of the Prosper loans platform' users along with their income range, I also got to see how can the payment duration play a role on the borrower's rates and on the lender's yield, return and loss.<br>
+After playing around with the data variables, I got to, also, learn more about the average loan taken for each listing category where I found out that debt consolidation had the highest average, as for the relation between the employment status and the average debt taken I found the expected result of employed users having the biggest average.
+I also wanted to see the deb/income ration per income range and was surprised to see that the lower the range is the higher the ratio, I also wanted to see if there is a relation between the prosper rating and the lender's yield/estimated return/ estimated loss and got a negative correlation between them, even after introducing the term length as a third variable.
+
+## Key Insights
+
+For the presentation, I focused more on the most commun listing duration (where I found out that most listings are for 36 months), I also worked on the income range count in our data (For this part of the project I found that people with lower-middle and middle income are most likely to take loans(at least in this platform), with people with higher income taking second place and lastly people with low income / no income being the rarer case in this data), I was curious about the relation between each term and the lender's yield/estimated return, the average loan amount per employment status (I found that employed people tend to take bigger loans than those who are retired, part-timers or not employed), I also wanted to see the correlation between the Prosper rating and the lender's yield/estimated return/estimated loss (For this part I found that there is a negative correlation between the rating and the other variables) and lastly I want to talk about the home ownership's effect on loan amount per employment status/income range and this is where it gets interesting because home ownership does in fact affect the loan amount taken regardless of income range or employment status.
